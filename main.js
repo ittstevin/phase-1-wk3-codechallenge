@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <p id="availableTickets">Available tickets: <span>${
       movie.capacity - movie.tickets_sold
     }</span></p>
-    <button class="custombtn" id="buyTicket">buy ticket 🎟️</button>
+    <button class="custombtn" id="buyTicket">buy ticket </button>
    </div>`;
   
       movieDetailsContainer.innerHTML = "";
