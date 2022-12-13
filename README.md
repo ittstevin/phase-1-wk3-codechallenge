@@ -31,7 +31,7 @@ If you haven't already, fork and clone this lesson into your local environment.
 - The webpage consists of 15 buttons for every movie available.
 - When a movie is clicked, The cover photo for the movie is displayed together with the decription of the movie.
 - The length of the movie is displayed and the time to be streamed
-- The theatre capacity is also included together with the tickets sold the the tickets available
+- The theatre capacity is also included together with the tickets sold and the tickets available
 - Finally, the option to buy tickets is also included
 
 
