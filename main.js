@@ -1,27 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // getting elements from the DOM
     const moviesListContainer = document.querySelector("#moviesList");
     const movieDetailsContainer = document.querySelector("#movieDetails");
   
-    // getting films data
     fetch("https://flatdango.vercel.app/db.json")
       .then((res) => res.json())
       .then((data) => {
         displayMoviesList(data.films);
       });
   
-    //   displaying movies titles
     function displayMoviesList(data) {
       data.map((movie) => {
         const markUp = `<li class="list-group-item" id="movieList">${movie.title}</li>`;
   
-        // append movie titles
         moviesListContainer.insertAdjacentHTML("afterbegin", markUp);
   
-        // show the first movie details on the list on load of the page
         displayMovieDetails(movie);
   
-        // show movie details on click of the movie titles
         const movieList = document.querySelector("#movieList");
         movieList.addEventListener("click", () => {
           displayMovieDetails(movie);
@@ -29,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // movie details
     function displayMovieDetails(movie) {
       const markUp = `<img src="${movie.poster}" alt="">
     <div>
@@ -54,8 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   
-    // ticket buying functionality
-    
     function buyTicket(movie) {
       const ticketsSold = document.querySelector("#ticketssold");
       let remainingTickets = movie.capacity - movie.tickets_sold;
@@ -65,9 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
       if (remainingTickets > 0) {
         movie.tickets_sold++;
         remainingTickets--;
-        btn.innerHTML = "buy ticket 🎟️";
+        btn.innerHTML = "buy ticket";
       } else {
-        btn.innerHTML = "sold out ⌛";
+        btn.innerHTML = "sold out";
         btn.classList.add("soldOut");
       }
       ticketsSold.innerHTML = `Tickets sold: <span>${movie.tickets_sold}</span>`;
