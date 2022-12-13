@@ -18,12 +18,12 @@ If you haven't already, fork and clone this lesson into your local environment.
 2. Once you are in my Github repo, choose SSH and copy the provided git URL info.
 3. navigate to the folder you want to clone the program
 4. Clone to your local machine with git clone followed by the git URL you copied. This will create a folder in the location you're currently in containing the program's files.
-5. cd into phase-1-wk3-code-challenge
+5. `cd` into `phase-1-wk3-code-challenge`
 
-# How to clone the Program
+# How to open the Program
 - Open Visual Studio Code or any other code text editor you have available with you
 - Open the terminal and make sure that you are in the program's folder
-- run npx json-server --watch db.json. This is suppoed to watch the db.json file and display its files
+- run npx `json-server --watch db.json`. This is suppoed to watch the db.json file and display its files
 - Now, view the index.html file on the browser to be able to use the program
 
 # Running the program
