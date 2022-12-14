@@ -13,6 +13,11 @@ This is a pretty straight foward program that lets you book movie tickets online
 # Getting Started
 If you haven't already, fork and clone this lesson into your local environment.
 
+ # Alternative 1
+- use the github pages link provided below to run the program
+
+        https://ittstevin.github.io/phase-1-wk3-codechallenge/
+
 # Quick Review to clone the program into your local environment
 1. Navigate to https://github.com/ittstevin/phase-1-wk3-codechallenge
 2. Once you are in my Github repo, choose SSH and copy the provided git URL info.
